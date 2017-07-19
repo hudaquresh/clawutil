@@ -116,7 +116,7 @@ endif
 
 #----------------------------------------------------------------------------
 # Targets that do not correspond to file names:
-.PHONY: .objs .exe clean clobber new all output plots;
+.PHONY: .objs .exe clean clobber new all output plots; 
 
 # Reset suffixes that we understand
 .SUFFIXES:
@@ -132,7 +132,6 @@ endif
 
 #----------------------------------------------------------------------------
 # Executable:
-
 .objs:  $(MODULE_FILES) $(OBJECTS);
 
 # The order here is to again build the module files correctly
@@ -298,4 +297,5 @@ help:
 	@echo '   "make help"     to print this message'
 
 .help: help
+
 
